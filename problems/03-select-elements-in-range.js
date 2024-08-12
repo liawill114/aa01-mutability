@@ -8,7 +8,14 @@ inclusive.
 */
 
 // Your code here 
+function selectElementsInRange(arr, min, max) {
+    let newArr = [];
 
+    for (let i = min; i <= max; i++) {
+        newArr[newArr.length] = arr[i];
+    }
+    return newArr;
+}
 
 // console.log(selectElementsInRange([1, 2, 3], 0, 1));        // [1, 2]
 // console.log(selectElementsInRange([2, 6, 9, 3, 1], 0, 3));  // [2, 6, 9, 3]
