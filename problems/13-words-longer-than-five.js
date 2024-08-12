@@ -5,7 +5,15 @@ than 5 characters.
 */
 
 // Your code here 
+function wordsLongerThan5(arr) {
+    let newArr = [];
 
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].length > 5) {
+            newArr[newArr.length] = arr[i];
+        }
+    } return newArr;
+}
 
 // let words1 = ['bike', 'skateboard','scooter', 'moped'];
 // let longerWords1 = wordsLongerThan5(words1);

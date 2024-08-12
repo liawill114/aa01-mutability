@@ -5,7 +5,16 @@ divisible by either 3 or 5, but not both.
 */
 
 // Your code here 
+function fizzBuzz(max) {
+    let arr = [];
 
+    for (let i = 0; i < max; i++) {
+        if (((i > 0 && i % 3 === 0) || (i > 0 && i % 5 === 0)) && !((i > 0 && i % 3 === 0) && (i > 0 && i % 5 === 0))) {
+            arr[arr.length] = i;
+        }
+    }
+    return arr;
+}
 
 // console.log(fizzBuzz(12)); // [ 3, 5, 6, 9, 10 ]
 // console.log(fizzBuzz(20)); // [ 3, 5, 6, 9, 10, 12, 18 ]
