@@ -5,7 +5,12 @@ of the array as elements. It should return the original array mutated.
 */
 
 // Your code here 
+function addTwoToEnd(arr, add1, add2) {
+    arr[arr.length] = add1;
+    arr[arr.length] = add2;
 
+    return arr;
+}
 // let arr1 = ['a', 'b'];
 // let added1 = addTwoToEnd(arr1, 'c', 'd');
 // console.log(added1);          // ['a', 'b', 'c', 'd']
