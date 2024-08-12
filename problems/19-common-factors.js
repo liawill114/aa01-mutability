@@ -5,7 +5,16 @@ divide both arguments.
 */
 
 // Your code here 
+function commonFactors(num1, num2) {
+    let arr = [];
 
+    for (let i = 0; i < num2; i++) {
+        if (num1 % i === 0 && num2 % i === 0) {
+            arr[arr.length] = i;
+        }
+    }
+    return arr;
+}
 
 // console.log(commonFactors(4, 8));              // [1, 2, 4]
 // console.log(commonFactors(12, 24));            // [1, 2, 3, 4, 6, 12]

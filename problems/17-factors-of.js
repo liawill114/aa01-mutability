@@ -5,7 +5,16 @@ into num with no remainder.
 */
 
 // Your code here 
+function factorsOf(num) {
+    let arr = [];
 
+    for (let i = 0; i <= num; i++) {
+        if (num % i === 0) {
+            arr[arr.length] = i;
+        }
+    }
+    return arr;
+}
 
 // console.log(factorsOf(9)); // [ 1, 3, 9 ]
 // console.log(factorsOf(10)); // [ 1, 2, 5, 10 ]
