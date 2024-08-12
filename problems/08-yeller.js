@@ -4,7 +4,13 @@ return a NEW array where each element of the original array is yelled.
 */
 
 // Your code here 
+function yeller(words) {
 
+    for (let i = 0; i < words.length; i++) {
+        words[i] = words[i].toUpperCase() + '!';
+    }
+    return words;
+}
 
 // let words1 = ['hello', 'world'];
 // let yelled1 = yeller(['hello', 'world']);
