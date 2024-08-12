@@ -5,7 +5,14 @@ new array twice with the second set of elements in reverse order.
 */
 
 // Your code here 
+function mirror(arr) {
+    let newArr = [];
 
+    for(let i = arr.length - 1; i >= 0; i--) {
+        newArr[newArr.length] = arr[i] 
+    }
+    return arr.concat(newArr);
+}
 
 // console.log(mirror([1,2,3])); //=> [ 1, 2, 3, 3, 2, 1 ]
 // console.log(mirror(['a', 'b', 'c', 'd']));
