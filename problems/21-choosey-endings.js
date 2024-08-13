@@ -6,7 +6,16 @@ empty array.
 */
 
 // Your code here 
+function chooseyEndings(arr, suffix) {
+    let newArr = [];
 
+    for (let i = 0; i < arr.length; i++) {
+        if(arr[i].endsWith(suffix)) {
+            newArr[newArr.length] = arr[i];
+        }
+    }
+    return newArr;
+}
 
 // console.log(chooseyEndings(['family', 'hound', 'catalyst','fly', 'timidly', 'bond'], 'ly'));
 // //=> [ 'family', 'fly', 'timidly' ]

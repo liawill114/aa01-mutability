@@ -6,7 +6,12 @@ that were removed.
 */
 
 // Your code here 
+function popper(array, num) {
 
+    let newArr = array.splice(-num, num);
+    return newArr;
+    
+}
 
 // let arr1 = ['a', 'b', 'c', 'd', 'e'];
 // console.log(popper(arr1, 2)); // [ 'e', 'd' ]

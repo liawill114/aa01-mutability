@@ -7,7 +7,18 @@ element of the sequence.
 */
 
 // Your code here 
+function doubleSequence (base, length) {
+    let newArr = [];
 
+    for (let i = 0; i < length; i++) {
+        if (i === 0) {
+            newArr.push(base);
+        } else {
+            newArr.push(newArr[i - 1] * 2); //double the previous number
+        }
+    }
+    return newArr;
+}
 // console.log(doubleSequence(7, 3));  // [7, 14, 28]
 // console.log(doubleSequence(3, 5));  // [3, 6, 12, 24, 48]
 // console.log(doubleSequence(5, 3));  // [5, 10, 20]
